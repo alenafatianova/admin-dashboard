@@ -1,0 +1,52 @@
+.topbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.searchbar-box {
+    display: flex;
+    border-radius: 3px;
+}
+
+.searchbar-input {
+    margin-left: 2px;
+    flex: 1;
+}
+
+.ant-input-search
+.ant-input-affix-wrapper, 
+.ant-input {
+    background-color: var(--blueAccent-200);
+    border-color:  var(--blueAccent-700);
+    
+}
+
+.ant-input::placeholder {
+    color: var(--blueAccent-700); 
+}
+
+.topbar-menu-icons {
+    display: flex;
+}
+
+.darkmode-icon, 
+.lightmode-icon,
+.settings-icon,
+.user-icon,
+.notifications-icon {
+   color: var(--blueAccent-700);
+}
+
+.settings-button, 
+.user-button,
+.notifications-button,
+.mode-button {
+    background-color: inherit;
+    box-shadow: none;
+    border: none;
+}
+
+.notifications-button {
+
+}

@@ -33,7 +33,8 @@ html,
 
 
 [data-theme = 'dark'] {
-
+   
+    --icons-background: #e0e0e0;
     --grey-100: #e0e0e0;
     --grey-200: #c2c2c2;
     --grey-300: #a3a3a3;
@@ -42,12 +43,12 @@ html,
     --grey-600: #525252;
     --grey-700: #3d3d3d;
     --grey-800: #292929;
-    --grey-900: #141414;
+    --grey-900: #dbf5ee;;
 
     --primary-100: #d0d1d5;
     --primary-200: #a1a4ab;
     --primary-300: #727681;
-    --primary-400: #434957;
+    --primary-400: #1F2A40;
     --primary-500: #141b2d;
     --primary-600: #101624;
     --primary-700: #0c101b;
@@ -87,7 +88,8 @@ html,
 }
 
 
-/* [data-theme = 'light'] {
+[data-theme = 'light'] {
+  
     --grey-100: #141414;
     --grey-200: #292929;
     --grey-300: #3d3d3d;
@@ -140,4 +142,4 @@ html,
     --greenAccent-700: #94e2cd;
     --greenAccent-800: #b7ebde;
     --greenAccent-900: #dbf5ee;
-} */
+}
