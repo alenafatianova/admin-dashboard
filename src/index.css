@@ -34,7 +34,8 @@ html,
 
 [data-theme = 'dark'] {
    
-    --icons-background: #e0e0e0;
+    --icons-background: #292929;
+    --font-color: #e0e0e0;
     --grey-100: #e0e0e0;
     --grey-200: #c2c2c2;
     --grey-300: #a3a3a3;
@@ -90,6 +91,7 @@ html,
 
 [data-theme = 'light'] {
   
+    --font-color:  #e0e0e0;
     --grey-100: #141414;
     --grey-200: #292929;
     --grey-300: #3d3d3d;

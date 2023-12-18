@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, To } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
 import { MdGroup } from "react-icons/md";
