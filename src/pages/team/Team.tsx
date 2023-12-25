@@ -15,8 +15,6 @@ type RowsType = {
   age: number
 }
 
-type RowsSelectionType = RowsType & DataType
-
 type DataType = {
   key: string
   id: number
@@ -42,7 +40,12 @@ const columns: DataType[] = [
     title: "Name",
     key: 'Name',
     dataIndex: 'name',
-    className: 'table-name-column'
+    className: 'table-name-column',
+    render: ({classname, visible}) => {
+      return (
+        <div></div>
+      )
+    }
   },
   {
     id: 2,
@@ -88,7 +91,7 @@ const columns: DataType[] = [
 export const Team: React.FC = () => {
 
   const [selectedRowKeys, setSelectedRowsKeys] = useState<React.Key[]>([])
-  console.log('value.access:', AccessLevel)
+
   const onSelectRowsChange = (selectedRowKeys: Key[]) => {
     setSelectedRowsKeys(selectedRowKeys)
     

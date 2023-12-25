@@ -1,0 +1,13 @@
+.item-column-title {
+    margin-right: 15px;
+}
+.ant-dropdown-menu.ant-dropdown-menu-root 
+{
+    padding: 15px;
+    display: flex;
+    width: 150px;
+}
+
+.ant-table-selection-column {
+	display: none;
+}
