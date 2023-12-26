@@ -4,6 +4,8 @@ import { Header } from "../../components/header/Header";
 import { mockDataContacts } from "../../data/mockDataContacts";
 import "./Contacts.css";
 import { RxColumns } from "react-icons/rx";
+import { CiExport } from "react-icons/ci";
+import { CSVLink } from 'react-csv'
 
 type DataType = {
   key?: string;
@@ -256,16 +258,21 @@ export const Contacts: React.FC<TableProps<DataType>> = () => {
           trigger={['click']}
           onOpenChange={handleOpenChange}
         >
-          <Button onClick={onDropdownHandler} icon={<RxColumns />}></Button>
+          <Button onClick={onDropdownHandler} className="button-dropdown" icon={<RxColumns className="button-dropdown-icon"/>}></Button>
         </Dropdown>
+        <div className="csv-download-wrapper">
+          <CSVLink data={mockDataContacts} filename="ContactsTable.csv"> 
+          <Button  className="csv-export-button" icon={<CiExport className="csv-export-button-icon" />}></Button>
+          </CSVLink>
+        </div>
       </div>
-      <div className="team-table-wrapper">
+      <div className="contacts-table-wrapper">
         <Table
           dataSource={mockDataContacts}
           columns={baseColumns}
           rowSelection={onRowsSelection}
           rowKey={"id"}
-          className={"team-table"}
+          className={"contacts-table"}
           pagination={{ position: ["bottomRight"] }}
         /> 
       </div>
