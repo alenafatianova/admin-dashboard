@@ -1,4 +1,4 @@
-import { Button, Checkbox, Dropdown, MenuProps, Table, TableProps } from "antd";
+import { Button, Checkbox, Dropdown, DropdownProps, MenuProps, Table, TableProps } from "antd";
 import React, { Key, useState } from "react";
 import { Header } from "../../components/header/Header";
 import { mockDataContacts } from "../../data/mockDataContacts";
@@ -66,16 +66,15 @@ const columns: DataType[] = [
 
 export const Contacts: React.FC<TableProps<DataType>> = () => {
   const [selectedRowKeys, setSelectedRowsKeys] = useState<React.Key[]>([]);
-  const [dropdownState, setDropdownState] = useState(false);
+  const [dropdownToggle, setDropdownToggle] = useState(false);
   let [baseColumns, setBaseColumns] = useState(columns.filter(column => column.dataIndex !== 'age'))
 
   const onSelectRowsChange = (selectedRowKeys: Key[]) => {
     setSelectedRowsKeys(selectedRowKeys)
-   
   };
 
   const onDropdownHandler = () => {
-    setDropdownState(!dropdownState);
+    setDropdownToggle(!dropdownToggle)
   };
 
   const onChangeDropdown = (checkedValues: any) => {
@@ -229,11 +228,16 @@ export const Contacts: React.FC<TableProps<DataType>> = () => {
         <Checkbox value="address">Address</Checkbox>
         <Checkbox value="city">City</Checkbox>
         <Checkbox value="zipCode">ZipCode</Checkbox>
-        
       </Checkbox.Group>
       )
     }
-  ]
+  ];
+
+  const handleOpenChange: DropdownProps['onOpenChange'] = (nextOpen, info) => {
+    if (info.source === 'trigger' || nextOpen) {
+      setDropdownToggle(nextOpen);
+    }
+  };
 
   const onRowsSelection = {
     selectedRowKeys,
@@ -244,11 +248,13 @@ export const Contacts: React.FC<TableProps<DataType>> = () => {
   return (
     <div className="contacts-wrapper">
       <Header title="Contacts" subtitle="List of contacts" />
-      <div className="table-topbar">
-        <Dropdown
-          open={dropdownState}
+      <div className="table-topbar" >
+       <Dropdown
+          open={dropdownToggle}
           menu={{ items }}
           className="dropdown-menu"
+          trigger={['click']}
+          onOpenChange={handleOpenChange}
         >
           <Button onClick={onDropdownHandler} icon={<RxColumns />}></Button>
         </Dropdown>

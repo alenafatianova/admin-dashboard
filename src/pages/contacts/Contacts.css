@@ -11,3 +11,7 @@
 .ant-table-selection-column {
 	display: none;
 }
+
+.table-topbar {
+    width: 200px;
+}
