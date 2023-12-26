@@ -1,0 +1,52 @@
+.access-level-row {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.team-table {
+    margin: 40px;
+    /* height: 75vh; */
+}
+.team-table .ant-table-thead .ant-table-cell {
+    background: var(--table-header-background);
+    color: var(--font-color);
+}
+
+.team-table .ant-table-tbody .ant-table-row .ant-table-cell {
+    border-bottom: none;
+}
+
+.team-table .ant-table-tbody {
+    background-color: var(--table-body-background);
+    color: var(--font-color);
+}
+
+.team-table .ant-table-tbody > .ant-table-row > .ant-table-cell-row-hover {
+    background-color: var(--table-cell-hover);
+}
+
+.team-table .ant-table-pagination.ant-pagination.ant-table-pagination-right {
+    color: var(--font-color);
+    background: var(--table-header-background);
+}
+.team-table .ant-pagination-disabled .ant-pagination-item-link .ant-pagination-disabled:hover {
+    color: var(--font-color);
+}
+
+
+.access-level-text {
+    color: var(--table-access-column-color);
+    margin-left: 5px;
+}
+
+.table-name-column {
+    color: var(--table-name-column-color);
+}
+
+.table-access-column {
+    color: var(--table-access-column-color);
+}

@@ -1,0 +1,33 @@
+.invoices-wrapper {
+    margin-top: 147px;
+}
+
+.invoices-table {
+    margin: 15px 40px;
+}
+
+.invoices-table .ant-table-thead .ant-table-cell {
+    background: var(--table-header-background);
+    color: var(--font-color);
+}
+
+.invoices-table .ant-table-tbody .ant-table-row .ant-table-cell {
+    border-bottom: none;
+}
+
+.invoices-table .ant-table-tbody {
+    background-color: var(--table-body-background);
+    color: var(--font-color);
+}
+
+.invoices-table .ant-table-tbody > .ant-table-row > .ant-table-cell-row-hover {
+    background-color: var(--table-cell-hover);
+}
+
+.invoices-table .ant-table-pagination.ant-pagination.ant-table-pagination-right {
+    color: var(--font-color);
+    background: var(--table-header-background);
+}
+.invoices-table .ant-pagination-disabled .ant-pagination-item-link .ant-pagination-disabled:hover {
+    color: var(--font-color);
+}
