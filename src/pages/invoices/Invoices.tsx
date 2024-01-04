@@ -36,6 +36,7 @@ const columns: DataType[] = [
     title: "Cost",
     key: "Cost",
     dataIndex: "cost",
+    className: 'cost-column'
   },
   {
     id: 5,

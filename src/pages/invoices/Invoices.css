@@ -31,3 +31,7 @@
 .invoices-table .ant-pagination-disabled .ant-pagination-item-link .ant-pagination-disabled:hover {
     color: var(--font-color);
 }
+
+.cost-column {
+    color: var(--greenAccent-500);
+}
