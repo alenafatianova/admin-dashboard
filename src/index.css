@@ -38,6 +38,8 @@ html,
     --font-color: #292929;
     --table-name-column-color: #1e5245;
     --table-cell-hover: #e9f2fa;
+    --calendar-sidebar-background: #1F2A40;
+    --calendar-event: #4cceac;
 
     --grey-100: #e0e0e0;
     --grey-200: #c2c2c2;
@@ -100,6 +102,8 @@ html,
     --table-name-column-color: #b7ebde;
     --table-cell-hover: #3a3a3a;
     --table-access-column-color: #0f2922;
+    --calendar-sidebar-background: #3a4d7b;
+    --calendar-event: #4cceac;;
 
     --grey-100: #141414;
     --grey-200: #292929;

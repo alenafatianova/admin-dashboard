@@ -1,0 +1,26 @@
+.fullcalendar-wrapper {
+    margin: 20px;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar-sidebar {
+    flex: 1 1 20%;
+    background-color: var(--calendar-sidebar-background);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.calendar-list-item {
+    margin: 10px 0;
+    border-radius: 2px;
+    background-color: var(--calendar-event);
+}
+
+.calendar-box {
+    flex: 1 1 100%;
+    margin-left: 15px;
+}
