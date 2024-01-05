@@ -10,7 +10,7 @@ import { Team } from './pages/team/Team';
 import { Contacts } from './pages/contacts/Contacts';
 import { Bar } from './pages/bar/Bar';
 import { Line } from './pages/line/Line';
-import { Form } from './pages/form/Form';
+import { NewUserForm } from './pages/form/Form';
 import { FAQ } from './pages/faq/FAQ';
 import { Pie } from './pages/pie/Pie';
 import { Geo } from './pages/geo/Geo';
@@ -38,7 +38,7 @@ export const App: React.FC = () =>  {
           <Route path='/invoices' element={<Invoices /> } />
           <Route path='/contacts' element={<Contacts /> } />
           <Route path='/bar' element={ <Bar /> } />
-          <Route path='/form' element={ <Form /> } />
+          <Route path='/form' element={ <NewUserForm /> } />
           <Route path='/line' element={ <Line /> } />
           <Route path='/pie' element={ <Pie /> } />
           <Route path='/faq' element={ <FAQ /> } />
