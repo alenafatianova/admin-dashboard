@@ -1,0 +1,33 @@
+.form-box-container {
+    margin: 20px;
+}
+
+.form-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.firstName-input,
+.lastName-input {
+    grid-column: span 2;
+}
+
+.email-input, 
+.phone-input,
+.addressOne-input,
+.addressTwo-input {
+    grid-column: span 4;
+}
+
+.form-button {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+@media screen and(min-width: 600px) {
+    .form-container {
+        grid-column: span 4;
+    }
+}
