@@ -1,7 +1,5 @@
-import React, { FormEvent, RefObject, useRef, useState } from 'react'
+import React, {  RefObject, useRef, useState } from 'react'
 import { Header } from '../../components/header/Header'
-import { Formik } from 'formik'
-import * as yup from 'yup'
 import { Button, Input, Form } from 'antd'
 import './Form.css'
 
@@ -153,8 +151,6 @@ export const NewUserForm = () => {
                 <Button htmlType='submit' type='primary'>Create New User</Button>
               </div>
             </Form>
-          
-       
       </div>
     </div>
   )
