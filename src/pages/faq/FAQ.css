@@ -1,0 +1,12 @@
+.faq-wrapper {
+    margin: 20px;
+}
+
+.ant-collapse-header-text,
+.ant-collapse-expand-icon {
+    color: var(--font-color);
+}
+
+.collapse {
+    background-color: var(--collapse-background);
+}
