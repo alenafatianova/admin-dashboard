@@ -42,6 +42,9 @@ html,
     --calendar-event: #4cceac;
     --collapse-background: #a4a9fc;
     --bar-axis: #e0e0e0;
+    --radial-gradient: #1F2A40;
+    --row-one-background: #1F2A40;
+    --email-icon: #3da58a;
 
     --grey-100: #e0e0e0;
     --grey-200: #c2c2c2;
@@ -108,6 +111,9 @@ html,
     --calendar-event: #4cceac;
     --collapse-background: #3e4396;
     --bar-axis: #141414;
+    --radial-gradient: #101624;
+    --row-one-background: #101624;
+    --email-icon: #70d8bd;
 
     --grey-100: #141414;
     --grey-200: #292929;

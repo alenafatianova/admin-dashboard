@@ -1,17 +1,16 @@
 import React from 'react'
 import { ResponsiveBar } from '@nivo/bar'
 import { mockBarData } from '../../data/mockBarData'
-import './Bar.css'
+import './BarChart.css'
 import { theme as antdTheme } from 'antd'
 
-export const Bar = () => {
+export const BarChart: React.FC = () => {
 
   const { useToken } = antdTheme
   const { token: theme } = useToken()
  
   return (
     <div className='bar-wrapper'>
-    
       <ResponsiveBar
         data={mockBarData}
         theme={{
