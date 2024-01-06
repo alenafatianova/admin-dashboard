@@ -7,3 +7,125 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.dashboard-grid {
+    display: grid;
+    gap: 20px;
+    grid-auto-rows: 140px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.row-one {
+    grid-column: span 3;
+    background-color: var(--row-one-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statbox-row-one {
+    color: var(--font-color);
+}
+
+.email-icon, 
+.sales-icon,
+.clients-icon,
+.traffic-icon {
+    color: var(--email-icon);
+    font-size: 26px;
+    
+}
+
+.row-two-wrapper {
+    grid-column: span 8;
+    grid-row: span 2;
+    background-color: var(--row-one-background);
+}
+
+.row-two {
+    margin-top: 25px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-two-h5 {
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.row-two-h3 {
+    color: var(--greenAccent-500);
+    font-weight: 500;
+}
+
+.transactions-wrapper {
+    display: grid;
+    grid-column: span 4;
+    grid-row: span 2;
+    background-color: var(--row-one-background);
+    overflow: scroll;
+}
+
+ .transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid var(--primary-500);
+    padding: 15px;
+}
+
+.transaction-h5 {
+    color: var(--greenAccent-500);
+}
+
+.transaction-h5-user, 
+.transaction-date-box {
+    color: #a3a3a3;
+}
+
+.linechart-wrapper {
+    height: 147px !important;
+    margin-left: -20px;
+}
+
+.transaction-cost-box {
+    width: 70px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: var(--greenAccent-500);
+    color: var(--font-color);
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.row-three-wrapper {
+    display: grid;
+    grid-column: span 4;
+    grid-row: span 2;
+    background-color: var(--row-one-background);
+    text-align: center;
+}
+
+.revenue-h5 {
+    color: var(--greenAccent-500);
+    margin-top: 15px;
+}
+
+.bar-wrapper  {
+    height: 250px !important;
+    margin-top: -25px;
+}
+
+.sales-h5,
+.campaign-h5,
+.additional-comment,
+.geo-h5 {
+    color: #a3a3a3;
+}
+
+.geo-wrapper {
+    height: 250px !important;
+    margin-top: -10px;
+}
